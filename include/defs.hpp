@@ -16,9 +16,13 @@
 #include <SFML/Window.hpp>
 
 // RESOURCES PATHS
-constexpr char BACKGROUND_PATH[] = "background.jpg";
-constexpr char APPLE_PATH[] = "apple.png";
-constexpr char FONT_PATH[] = "font.ttf";
+#ifndef RESOURCES_DIR
+#define RESOURCES_DIR ""
+#endif
+
+constexpr char BACKGROUND_PATH[] = RESOURCES_DIR "background.jpg";
+constexpr char APPLE_PATH[] = RESOURCES_DIR "apple.png";
+constexpr char FONT_PATH[] = RESOURCES_DIR "font.ttf";
 
 // WINDOW
 constexpr char GAME_WINDOW_NAME[] = "Snake";

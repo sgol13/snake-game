@@ -94,8 +94,8 @@ void Interface::display(sf::RenderWindow &window) {
 void Interface::setApplePosition(int xi, int yi) {
 
     sf::Vector2f position;
-    position.x = TILE_WIDTH * xi;
-    position.y = TILE_HEIGHT * yi + UPPER_BOX_HEIGHT;
+    position.x = static_cast<float>(TILE_WIDTH * xi);
+    position.y = static_cast<float>(TILE_HEIGHT * yi + UPPER_BOX_HEIGHT);
     board_apple.setPosition(position);
 }
 

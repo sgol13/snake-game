@@ -11,7 +11,7 @@ Game::Game() {
     window.setVerticalSyncEnabled(true);
     window.setPosition(sf::Vector2i(0, 0));
 
-    srand(time(nullptr));
+    srand(static_cast<unsigned int>(time(0)));
 }
 
 void Game::play() {
@@ -78,6 +78,10 @@ void Game::handleEvents() {
             } else if (event.key.code == sf::Keyboard::Return) {
                 window.close();
             }
+            break;
+
+        default:
+            break;
         }
     }
 }
