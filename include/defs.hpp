@@ -27,11 +27,11 @@ constexpr char FONT_PATH[] = RESOURCES_DIR "font.ttf";
 // WINDOW
 constexpr char GAME_WINDOW_NAME[] = "Snake";
 
-constexpr int WINDOW_WIDTH = 800;
+constexpr int WINDOW_WIDTH = 1200;
 constexpr int WINDOW_HEIGHT = 900;
 constexpr int UPPER_BOX_HEIGHT = 100;
 
-constexpr int NUM_COLUMNS = 16;
+constexpr int NUM_COLUMNS = 24;
 constexpr int NUM_ROWS = 16;
 
 constexpr int UPPER_BOX_COLOR = 0x595959ff;
@@ -48,13 +48,13 @@ constexpr int SCORE_POS_Y = 12;
 constexpr int SCORE_COLOR = 0x202020ff;
 constexpr int SCORE_FONT_SIZE = 64;
 
-constexpr int GAME_OVER_TEXT_POS_X = 135;
+constexpr int GAME_OVER_TEXT_POS_X = 350;
 constexpr int GAME_OVER_TEXT_POS_Y = WINDOW_HEIGHT / 2 - UPPER_BOX_HEIGHT;
 constexpr int GAME_OVER_TEXT_COLOR = 0xd9d9d9ff;
 constexpr int GAME_OVER_FONT_SIZE = 82;
 constexpr char GAME_OVER_TEXT_STRING[] = "Game over";
 
-constexpr int PRESS_ENTER_TEXT_POS_X = 170;
+constexpr int PRESS_ENTER_TEXT_POS_X = 380;
 constexpr int PRESS_ENTER_TEXT_POS_Y = GAME_OVER_TEXT_POS_Y + 2 * GAME_OVER_FONT_SIZE;
 constexpr int PRESS_ENTER_TEXT_COLOR = 0xd9d9d9ff;
 constexpr int PRESS_ENTER_FONT_SIZE = 30;
